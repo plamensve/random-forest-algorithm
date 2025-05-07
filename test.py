@@ -90,7 +90,6 @@ print("R² Score:", r2)
 
 # 11. Прогноза за следващата седмица
 last_row = X.tail(1)
-real_next_close = y.tail(1).values[0]
 prediction = model.predict(last_row)
 
-print(f"Прогнозирано: {prediction[0]:.4f} | Реално: {real_next_close:.4f} | Грешка: {abs(prediction[0] - real_next_close):.4f}")
+print(f"Прогнозирано: {prediction[0]:.4f}")
